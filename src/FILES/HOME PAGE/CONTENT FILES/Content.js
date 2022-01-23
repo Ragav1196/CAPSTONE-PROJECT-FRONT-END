@@ -64,8 +64,8 @@ function Footer() {
     <section className="footerCtnr">
       <h1>Keep In Touch</h1>
       <article>
-          <p>I'm currently open to work as a</p>
-          <p>Front-end Developer</p>
+        <p>I'm currently open to work as a</p>
+        <p>Front-end Developer</p>
       </article>
       <p>Let's get in touch and talk more about your projects</p>
 
