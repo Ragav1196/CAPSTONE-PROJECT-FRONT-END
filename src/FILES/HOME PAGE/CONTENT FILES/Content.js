@@ -7,14 +7,12 @@ import { ProjectsHeading } from "./ProjectsHeading";
 import { Projects } from "./Projects";
 import { useContext } from "react";
 import { context } from "../Home";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export function Content() {
   // TO TOGGLE HIDE AND SHOW TOPBAR MENU:
   const { TbMenuBar, setTbMenuBar } = useContext(context);
   const styles = { opacity: TbMenuBar ? "0.3" : "1" };
-
-  const history = useHistory();
 
   return (
     <section
