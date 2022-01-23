@@ -7,11 +7,14 @@ import { ProjectsHeading } from "./ProjectsHeading";
 import { Projects } from "./Projects";
 import { useContext } from "react";
 import { context } from "../Home";
+import { Link, useHistory } from "react-router-dom";
 
 export function Content() {
   // TO TOGGLE HIDE AND SHOW TOPBAR MENU:
   const { TbMenuBar, setTbMenuBar } = useContext(context);
   const styles = { opacity: TbMenuBar ? "0.3" : "1" };
+
+  const history = useHistory();
 
   return (
     <section
@@ -37,15 +40,28 @@ export function Content() {
         </p>
       </article>
       <article className="TbLinkBtnCtnr">
-        <Button id="TbLinkBtn" variant="outlined" startIcon={<GitHubIcon />}>
-          Github
-        </Button>
-        <Button id="TbLinkBtn" variant="outlined" startIcon={<LinkedInIcon />}>
-          LinkedIn
-        </Button>
-        <Button id="TbLinkBtn" variant="outlined" startIcon={<MailIcon />}>
-          Email
-        </Button>
+        <Link to={{ pathname: "https://github.com/Ragav1196" }} target="_blank">
+          <Button id="TbLinkBtn" variant="outlined" startIcon={<GitHubIcon />}>
+            Github
+          </Button>
+        </Link>
+        <Link
+          to={{ pathname: "https://www.linkedin.com/signup" }}
+          target="_blank"
+        >
+          <Button
+            id="TbLinkBtn"
+            variant="outlined"
+            startIcon={<LinkedInIcon />}
+          >
+            LinkedIn
+          </Button>
+        </Link>
+        <Link to={{ pathname: "mailto:ragavinrap@gmail.com" }} target="_blank">
+          <Button id="TbLinkBtn" variant="outlined" startIcon={<MailIcon />}>
+            Email
+          </Button>
+        </Link>
       </article>
 
       <>
@@ -80,15 +96,28 @@ function Footer() {
       <p>Let's get in touch and talk more about your projects</p>
 
       <article className="TbLinkBtnCtnr footerBtnCtnr">
-        <Button id="TbLinkBtn" variant="outlined" startIcon={<GitHubIcon />}>
-          Github
-        </Button>
-        <Button id="TbLinkBtn" variant="outlined" startIcon={<LinkedInIcon />}>
-          LinkedIn
-        </Button>
-        <Button id="TbLinkBtn" variant="outlined" startIcon={<MailIcon />}>
-          Email
-        </Button>
+        <Link to={{ pathname: "https://github.com/Ragav1196" }} target="_blank">
+          <Button id="TbLinkBtn" variant="outlined" startIcon={<GitHubIcon />}>
+            Github
+          </Button>
+        </Link>
+        <Link
+          to={{ pathname: "https://www.linkedin.com/signup" }}
+          target="_blank"
+        >
+          <Button
+            id="TbLinkBtn"
+            variant="outlined"
+            startIcon={<LinkedInIcon />}
+          >
+            LinkedIn
+          </Button>
+        </Link>
+        <Link to={{ pathname: "mailto:ragavinrap@gmail.com" }} target="_blank">
+          <Button id="TbLinkBtn" variant="outlined" startIcon={<MailIcon />}>
+            Email
+          </Button>
+        </Link>
       </article>
 
       <p>Developed by Ragavendiran Panchatsharam</p>

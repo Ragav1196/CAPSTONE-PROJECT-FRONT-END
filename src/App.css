@@ -1,11 +1,16 @@
 .App {
   background-color: black;
   font-family: "Quicksand", sans-serif;
+  min-width: 425px;
 }
 
 .App * {
   color: white;
   font-size: 20px;
+}
+
+.App a {
+  text-decoration: none;
 }
 
 .App p {
@@ -32,6 +37,10 @@
 
 #TbMenuIcon * {
   font-size: 35px;
+}
+
+#TbMenuIcon:hover svg > path {
+  color: rgb(172, 111, 68);
 }
 
 /* CONTENT: */
@@ -150,28 +159,50 @@
   font-weight: 900;
 }
 
-#JSIcon {
-  border-color: black;
-  background-color: #141414;
-  color: white;
-  font-size: 10px;
-  color: #faf070;
+#ProjectGitIcon:hover svg > path {
+  color: rgb(172, 111, 68);
 }
 
-#JSIcon > span:nth-child(1) * {
+#ProjectLaunchIcon:hover svg > path {
+  color: rgb(172, 111, 68);
+}
+
+.projectLanguageBtn > button {
+  margin: 5px;
+}
+
+#reactIcon {
+  border-color: black;
+  background-color: #5bceee7e;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+#reactIcon > span:nth-child(1) * {
   color: #faf070;
   font-size: 15px;
 }
 
-#sassIcon {
+#mongoIcon {
   border-color: black;
-  background-color: #141414;
-  color: white;
+  background-color: #4e8e45;
   font-size: 10px;
-  color: #fbadbf;
+  color: #ffffff;
 }
 
-#sassIcon > span:nth-child(1) * {
+#mongoIcon > span:nth-child(1) * {
+  color: #fbadbf;
+  font-size: 15px;
+}
+
+#nodeIcon {
+  border-color: black;
+  background-color: #f1f1e6;
+  font-size: 10px;
+  color: #000000;
+}
+
+#nodeIcon > span:nth-child(1) * {
   color: #fbadbf;
   font-size: 15px;
 }
@@ -225,6 +256,10 @@
   margin-bottom: 200px;
 }
 
+.footerBtnCtnr > a {
+  margin: 5px;
+}
+
 /* TOPBAR MENU: */
 .TbMenuCtnr {
   position: fixed;
@@ -246,6 +281,10 @@
   border-bottom: 1px solid #ffffff47;
 }
 
+#closeMenuBar:hover svg > path {
+  color: rgb(172, 111, 68);
+}
+
 .TbMenuCtnr > article:nth-child(1) > h1 {
   margin-left: 20px;
 }
@@ -259,4 +298,12 @@
 
 .TbMenuCtnr > article:nth-child(2) * {
   color: white;
+}
+
+#tbMenuHomeBtn:hover {
+  color: rgb(172, 111, 68);
+}
+
+#tbMenuProjectsBtn:hover {
+  color: rgb(172, 111, 68);
 }

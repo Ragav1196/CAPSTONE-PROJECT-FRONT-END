@@ -16,6 +16,7 @@ export function TbMenu() {
       <article>
         <h1>MENU BAR</h1>
         <IconButton
+          id="closeMenuBar"
           onClick={() => setTbMenuBar(false)}
           aria-label="closeMenuBar"
         >
@@ -23,8 +24,8 @@ export function TbMenu() {
         </IconButton>
       </article>
       <article>
-        <Button variant="text">HOME</Button>
-        <Button variant="text">PROJECTS</Button>
+        <Button id="tbMenuHomeBtn" variant="text">HOME</Button>
+        <Button id="tbMenuProjectsBtn" variant="text">PROJECTS</Button>
       </article>
     </section>
   );
