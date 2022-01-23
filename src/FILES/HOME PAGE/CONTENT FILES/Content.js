@@ -5,10 +5,20 @@ import MailIcon from "@mui/icons-material/Mail";
 import { AboutMe } from "./AboutMe";
 import { ProjectsHeading } from "./ProjectsHeading";
 import { Projects } from "./Projects";
+import { useContext } from "react";
+import { context } from "../Home";
 
 export function Content() {
+  // TO TOGGLE HIDE AND SHOW TOPBAR MENU:
+  const { TbMenuBar, setTbMenuBar } = useContext(context);
+  const styles = { opacity: TbMenuBar ? "0.3" : "1" };
+
   return (
-    <section className="TbContentCtnr">
+    <section
+      style={styles}
+      onClick={() => setTbMenuBar(false)}
+      className="TbContentCtnr"
+    >
       <article className="TBBio" id="TbBio-1">
         <p>Hey there!, I'm-</p>
         <p className="TbMyName">Ragavendiran</p>
