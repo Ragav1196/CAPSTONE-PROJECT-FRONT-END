@@ -1,7 +1,9 @@
 .App {
   background-color: black;
   font-family: "Quicksand", sans-serif;
-  min-width: 425px;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
 }
 
 .App * {
@@ -15,6 +17,35 @@
 
 .App p {
   margin: 0px;
+}
+
+/* LINK: */
+.linkCntr {
+  height: 100%;
+  width: 100%;
+}
+
+/* HOME: */
+.homeError {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homeError > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.homeError > div > img {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
 }
 
 /* TOPBAR: */
@@ -47,6 +78,7 @@
 .TbContentCtnr {
   padding: 65px 20px;
   transition: all 0.5s;
+  min-width: 385px;
 }
 
 .TbMyName {
@@ -85,6 +117,12 @@
   color: #3ccf91;
 }
 
+/* PROJECT CONTENT: */
+.projContentCntr {
+  width: 100%;
+  height: 100%;
+}
+
 /* ABOUT ME: */
 .AbtMeCtnr {
   margin-top: 150px;
@@ -102,6 +140,19 @@
 .AbtMeCtnr span {
   color: #3ccf91;
   font-size: 15px;
+}
+
+.AbtMeCtnr > article {
+  display: flex;
+  justify-content: space-around;
+}
+
+.AbtMeCtnr > article > img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: 0px -25px;
 }
 
 /* PROJECT HEADING: */
@@ -142,7 +193,7 @@
   overflow: hidden;
   background-color: #080808;
   border: 1px solid #ffffff1c;
-  margin: 30px 0px;
+  margin: 60px 0px;
 }
 
 .ProjectsTitleCtnr {
@@ -157,6 +208,7 @@
 
 .ProjectsTitle > p {
   font-weight: 900;
+  width: 273px;
 }
 
 #ProjectGitIcon:hover svg > path {
@@ -176,6 +228,7 @@
   background-color: #5bceee7e;
   font-size: 10px;
   color: #ffffff;
+  cursor: auto;
 }
 
 #reactIcon > span:nth-child(1) * {
@@ -188,6 +241,7 @@
   background-color: #4e8e45;
   font-size: 10px;
   color: #ffffff;
+  cursor: auto;
 }
 
 #mongoIcon > span:nth-child(1) * {
@@ -200,6 +254,7 @@
   background-color: #f1f1e6;
   font-size: 10px;
   color: #000000;
+  cursor: auto;
 }
 
 #nodeIcon > span:nth-child(1) * {
@@ -242,6 +297,11 @@
   margin-bottom: 30px;
 }
 
+.footerCtnr > p > span {
+  color: #4e8e45;
+  font-size: 17px;
+}
+
 .footerCtnr h1 {
   font-size: 44px;
   margin: 0px;
@@ -258,6 +318,22 @@
 
 .footerBtnCtnr > a {
   margin: 5px;
+}
+
+/* PROJECT PAGE FOOTER: */
+.projectFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectFooter > p {
+  font-size: 14px;
+}
+
+.projectFooter > p > span {
+  color: #4e8e45;
+  font-size: 17px;
 }
 
 /* TOPBAR MENU: */
@@ -306,4 +382,14 @@
 
 #tbMenuProjectsBtn:hover {
   color: rgb(172, 111, 68);
+}
+
+/* PROJECT PAGE HEADING: */
+.projectPageHeading > h1 {
+  font-size: 47px;
+  margin: 26px 0px;
+}
+
+.projectPageHeading > p {
+  font-size: 16px;
 }

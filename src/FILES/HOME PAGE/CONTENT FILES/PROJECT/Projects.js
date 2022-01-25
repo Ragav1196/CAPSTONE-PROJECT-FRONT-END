@@ -4,26 +4,23 @@ import LaunchIcon from "@mui/icons-material/Launch";
 import IconButton from "@mui/material/IconButton";
 import { Link } from "react-router-dom";
 
-export function Projects() {
+export function Projects({ data }) {
   return (
     <section className="projectsCtnr">
       <article>
         <div>
-          <img
-            className="ProjectImg"
-            src="https://d33wubrfki0l68.cloudfront.net/61ec2a303a060400087bab2e/screenshot_2022-01-22-16-01-49-0000.png"
-            alt="project"
-          />
+          <Link to={{ pathname: `${data.netlify_link}` }} target="_blank">
+            <img className="ProjectImg" src={data.project_img} alt="project" />
+          </Link>
         </div>
 
         <div className="ProjectsTitleCtnr">
           <div className="ProjectsTitle">
-            <p>CRM APP</p>
+            <p>{data.project_name}</p>
             <div>
               <Link
                 to={{
-                  pathname:
-                    "https://github.com/Ragav1196/HACKATHON-MODULE-2-FRNT-END",
+                  pathname: `${data.git_link}`,
                 }}
                 target="_blank"
               >
@@ -33,7 +30,7 @@ export function Projects() {
               </Link>
               <Link
                 to={{
-                  pathname: "https://angry-mcclintock-279e94.netlify.app/",
+                  pathname: `${data.netlify_link}`,
                 }}
                 target="_blank"
               >
@@ -66,3 +63,41 @@ export function Projects() {
     </section>
   );
 }
+
+
+
+/* 
+
+[
+ {
+  "name": "AKSHAYA",
+  "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwgu1A5zgPSvfE83nurkuzNEoXs9DMNr8Ww&usqp=CAU",
+  "id": "1"
+ },
+ {
+  "name": "RAMYA",
+  "avatar": "https://www.whatsappprofiledpimages.com/wp-content/uploads/2021/08/Profile-Photo-Wallpaper.jpg",
+  "id": "2"
+ },
+ {
+  "name": "KARTHICK",
+  "avatar": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  "id": "3"
+ },
+ {
+  "name": "RAKESH",
+  "avatar": "https://media.istockphoto.com/photos/millennial-male-team-leader-organize-virtual-workshop-with-employees-picture-id1300972574?b=1&k=20&m=1300972574&s=170667a&w=0&h=2nBGC7tr0kWIU8zRQ3dMg-C5JLo9H2sNUuDjQ5mlYfo=",
+  "id": "4"
+ },
+ {
+  "name": "VIJAY",
+  "avatar": "https://us.123rf.com/450wm/fizkes/fizkes2007/fizkes200701793/152407909-profile-picture-of-smiling-young-caucasian-man-in-glasses-show-optimism-positive-and-motivation-head.jpg?ver=6",
+  "id": "5"
+ },
+ {
+  "name": "VICKY",
+  "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQ-YHX2i3RvTDDmpfnde4qyb2P8up7Wi3Ww&usqp=CAU",
+  "id": "6"
+ }
+]
+*/

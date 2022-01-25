@@ -1,12 +1,16 @@
-import { TopBar } from "./TopBar";
-import { Content } from "./CONTENT FILES/Content";
-import { TbMenu } from "./TbMenu";
+import { useContext, useEffect, useState } from "react";
+import { TbMenu } from "../HOME PAGE/TbMenu";
+import { TopBar } from "../HOME PAGE/TopBar";
 import { context } from "../Links";
-import { useContext, useState, useEffect } from "react";
+import { ProjectData } from "../HOME PAGE/CONTENT FILES/PROJECT/ProjectData";
 
-export function Home() {
+export function Content() {
   // TO GET PROJECT DETAILS:
   const { PrjDetails } = useContext(context);
+
+  // TO TOGGLE HIDE AND SHOW TOPBAR MENU:
+  const { TbMenuBar, setTbMenuBar } = useContext(context);
+  const styles = { opacity: TbMenuBar ? "0.3" : "1" };
 
   // TO SHOW ERROR MESSAGE WHEN SERVER SIDE HAVING PROBLEM:
   const [error, setError] = useState(true);
@@ -16,16 +20,24 @@ export function Home() {
       if (PrjDetails) {
         setError(false);
       }
-    }, 500);
+    }, 1000);
   }, [PrjDetails]);
 
   return (
-    <>
+    <section className="projContentCntr">
       {!error && PrjDetails ? (
         <>
           <TopBar />
-          <Content />
-          <TbMenu />
+          <article>
+            <TbMenu />
+            <div
+              style={styles}
+              onClick={() => setTbMenuBar(false)}
+              className="TbContentCtnr"
+            >
+              <ProjectData />
+            </div>
+          </article>
         </>
       ) : (
         ""
@@ -43,6 +55,6 @@ export function Home() {
       ) : (
         ""
       )}
-    </>
+    </section>
   );
 }

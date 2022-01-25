@@ -20,7 +20,12 @@ export function AboutMe() {
         When I'm not coding I play games with my friends, watch some show on
         Netflix, or if the weather's good, play basketball! 🏀
       </p>
-      <img src="https://i.imgur.com/ypIiclh.png" alt="Profile" />
+      <article>
+        <img
+          src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          alt="Profile"
+        />
+      </article>
     </section>
   );
 }
