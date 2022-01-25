@@ -4,9 +4,9 @@ import LaunchIcon from "@mui/icons-material/Launch";
 import IconButton from "@mui/material/IconButton";
 import { Link } from "react-router-dom";
 
-export function Projects({ data, index }) {
+export function Projects({ data }) {
   return (
-    <section className="projectsCtnr homeProjectsCtnr">
+    <section className="projectsCtnr PrPgProjectsCtnr">
       <article>
         <div>
           <Link to={{ pathname: `${data.netlify_link}` }} target="_blank">

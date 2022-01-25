@@ -2,13 +2,20 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { context } from "../Links";
 import { useContext } from "react";
+import { useHistory } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export function TopBar() {
   // TO TOGGLE HIDE AND SHOW TOPBAR MENU:
   const { TbMenuBar, setTbMenuBar } = useContext(context);
+
+  const {project} = useParams();
+  console.log(project == "project")
+
+  const history = useHistory();
   return (
     <section className="topBarCntr">
-      <p>HOME</p>
+      {project !== "project" ? <p>HOME</p> : <p>PROJECT</p>}
       <IconButton
         onClick={() => setTbMenuBar(!TbMenuBar)}
         id="TbMenuIcon"

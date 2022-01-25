@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { TbMenu } from "../HOME PAGE/TbMenu";
 import { TopBar } from "../HOME PAGE/TopBar";
 import { context } from "../Links";
-import { ProjectData } from "../HOME PAGE/CONTENT FILES/PROJECT/ProjectData";
+import { ProjectData } from "./ProjectData";
 
 export function Content() {
   // TO GET PROJECT DETAILS:
