@@ -1,11 +1,11 @@
 export function AboutMe() {
   return (
-    <section className="AbtMeCtnr">
+    <section data-aos="fade-up" className="AbtMeCtnr">
       <article>
         <h1>⚡ About Me</h1>
         <p>
-          Hey! I'm Abdul Rahman, I've been close to a computer since an early age,
-          and been passionate about it ever since.
+          Hey! I'm Abdul Rahman, I've been close to a computer since an early
+          age, and been passionate about it ever since.
         </p>
         <p>
           I really liked to build stuff using <span>no-code tools</span> back in

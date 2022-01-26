@@ -4,7 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
 import { AboutMe } from "./AboutMe";
 import { ProjectsHeading } from "./PROJECT/ProjectsHeading";
-import {ProjectData} from "./PROJECT/ProjectData"
+import { ProjectData } from "./PROJECT/ProjectData";
 import { useContext } from "react";
 import { context } from "../../Links";
 import { Link } from "react-router-dom";
@@ -21,24 +21,24 @@ export function Content() {
       onClick={() => setTbMenuBar(false)}
       className="TbContentCtnr"
     >
-      <article className="TBBio" id="TbBio-1">
+      <article data-aos="zoom-in-right" className="TBBio" id="TbBio-1">
         <p>Hey there!, I'm-</p>
         <p className="TbMyName">Ragavendiran</p>
         <p className="TbMyName">Panchatsharam</p>
       </article>
-      <article className="TBBio" id="TbBio-2">
+      <article data-aos="zoom-in-right" className="TBBio" id="TbBio-2">
         <p>
           <span>Software Engineer.</span> A self-taught developer with an
           interest in Computer Science.
         </p>
       </article>
-      <article className="TBBio" id="TbBio-3">
+      <article data-aos="zoom-in-right" className="TBBio" id="TbBio-3">
         <p>🚀 Exploring opportunities and side projects.</p>
         <p>
           🎓 Currently an Informatics Student at Universitas Negeri Surabaya.
         </p>
       </article>
-      <article className="TbLinkBtnCtnr">
+      <article data-aos="zoom-in-right" className="TbLinkBtnCtnr">
         <Link to={{ pathname: "https://github.com/Ragav1196" }} target="_blank">
           <Button id="TbLinkBtn" variant="outlined" startIcon={<GitHubIcon />}>
             Github
@@ -81,5 +81,3 @@ export function Content() {
     </section>
   );
 }
-
-

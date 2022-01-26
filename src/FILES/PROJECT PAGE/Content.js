@@ -3,8 +3,15 @@ import { TbMenu } from "../HOME PAGE/TbMenu";
 import { TopBar } from "../HOME PAGE/TopBar";
 import { context } from "../Links";
 import { ProjectData } from "./ProjectData";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export function Content() {
+  // ANIMATE ON SCROLL:
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   // TO GET PROJECT DETAILS:
   const { PrjDetails } = useContext(context);
 

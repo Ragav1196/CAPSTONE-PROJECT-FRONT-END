@@ -3,10 +3,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export function Footer() {
   return (
-    <section className="footerCtnr">
+    <section data-aos="flip-right" className="footerCtnr">
       <h1>Keep In Touch</h1>
       <article>
         <p>I'm currently open to work as a</p>
@@ -39,9 +40,16 @@ export function Footer() {
         </Link>
       </article>
 
-      <p>Developed by <span>Ragavendiran Panchatsharam</span></p>
-      <p>Built with <span>React JS</span>, <span>Node JS</span> & <span>Mongo DB</span></p>
-      <p>Hosted on <span>Netlify</span></p>
+      <p>
+        Developed by <span>Ragavendiran Panchatsharam</span>
+      </p>
+      <p>
+        Built with <span>React JS</span>, <span>Node JS</span> &{" "}
+        <span>Mongo DB</span>
+      </p>
+      <p>
+        Hosted on <span>Netlify</span>
+      </p>
     </section>
   );
 }

@@ -10,8 +10,6 @@ export function TopBar() {
   const { TbMenuBar, setTbMenuBar } = useContext(context);
 
   const {project} = useParams();
-  console.log(project == "project")
-
   const history = useHistory();
   return (
     <section className="topBarCntr">

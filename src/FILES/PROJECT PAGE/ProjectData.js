@@ -12,7 +12,7 @@ export function ProjectData() {
   return (
     <section className="projPagePjDataContr">
       {project ? (
-        <article className="projectPageHeading">
+        <article data-aos="slide-left" className="projectPageHeading">
           <h1>LIST OF ALL PROJECTS</h1>
           <p>
             I love building projects and practice my engineering skills, here's
@@ -30,7 +30,7 @@ export function ProjectData() {
       </article>
 
       {project ? (
-        <article className="projectFooter">
+        <article data-aos="flip-right" className="projectFooter">
           <p>
             Developed by <span>Ragavendiran Panchatsharam</span>
           </p>

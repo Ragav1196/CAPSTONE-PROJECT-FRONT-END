@@ -1,9 +1,7 @@
 .App {
-  background-color: black;
   font-family: "Quicksand", sans-serif;
-  height: 100vh;
-  width: 100vw;
-  overflow-y: scroll;
+  /* width: 100vw; */
+  overflow-x: scroll;
 }
 
 .App * {
@@ -21,8 +19,11 @@
 
 /* LINK: */
 .linkCntr {
-  height: 100%;
-  width: 100%;
+  /* width: 100%;
+  height: 100%; */
+  background-color: black;
+  min-width: 385px;
+  /* overflow-x: hidden; */
 }
 
 /* HOME: */
@@ -38,8 +39,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
 }
 
 .homeError > div > img {
@@ -80,11 +82,11 @@
 .TbContentCtnr {
   padding: 65px 20px;
   transition: all 0.5s;
-  min-width: 385px;
+  /* background-color: black; */
 }
 
 .TbMyName {
-  font-size: 50px;
+  font-size: 30px;
   font-family: "Gravitas One", cursive;
 }
 
@@ -198,7 +200,7 @@
   border-radius: 10px;
   overflow: hidden;
   background-color: #080808;
-  border: 1px solid #ffffff6e;  
+  border: 1px solid #ffffff6e;
   margin: 60px 0px;
   height: min-content;
 }
@@ -229,45 +231,33 @@
 
 .projectLanguageBtn > button {
   margin: 5px;
+  font-size: 10px;
+  cursor: auto;
+  color: #ffffff;
+  border-color: black;
 }
 
 #reactIcon {
-  border-color: black;
   background-color: #5bceee7e;
-  font-size: 10px;
-  color: #ffffff;
-  cursor: auto;
 }
 
-#reactIcon > span:nth-child(1) * {
-  color: #faf070;
-  font-size: 15px;
-}
-
-#mongoIcon {
-  border-color: black;
+#mongodbIcon {
   background-color: #4e8e45;
-  font-size: 10px;
-  color: #ffffff;
-  cursor: auto;
 }
 
-#mongoIcon > span:nth-child(1) * {
-  color: #fbadbf;
-  font-size: 15px;
-}
-
-#nodeIcon {
-  border-color: black;
+#nodejsIcon {
   background-color: #f1f1e6;
-  font-size: 10px;
   color: #000000;
-  cursor: auto;
 }
 
-#nodeIcon > span:nth-child(1) * {
-  color: #fbadbf;
-  font-size: 15px;
+#mockapiIcon {
+  background-color: #e19109;
+  color: #000000;
+}
+
+#githubapiIcon {
+  border-color: rgb(255, 255, 255);
+  background-color: #000000;
 }
 
 .ProjectsTitleCtnr > div:nth-child(2) {
@@ -405,7 +395,7 @@
   text-align: center;
 }
 
-.PrPgProjectsCtnr{
+.PrPgProjectsCtnr {
   height: auto;
 }
 
@@ -434,7 +424,7 @@
   }
 
   /* PROJECT MAP: */
-  .ProjPgMap{
+  .ProjPgMap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -447,7 +437,7 @@
     color: #3ccf91;
     text-align: left;
   }
-  
+
   .projectPageHeading > p {
     font-size: 20px;
     text-align: left;

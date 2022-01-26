@@ -13,7 +13,7 @@ export function ProjectData() {
     <section className="projDataContr homeProjDataContr">
       <article>
         {updatedPrjDetails.map((data, i) => (
-          <Projects data={data} key={i} index={i} />
+          <Projects data={data} key={i} />
         ))}
       </article>
     </section>

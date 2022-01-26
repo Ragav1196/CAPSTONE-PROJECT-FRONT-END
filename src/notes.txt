@@ -1,0 +1,2 @@
+TO HAVE GRAPHICS EFFECT ON SCROLL:
+        npm i aos -- save => Install this module
