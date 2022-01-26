@@ -4,7 +4,7 @@ export function AboutMe() {
       <article>
         <h1>⚡ About Me</h1>
         <p>
-          Hey! I'm Abdul Rahman, I've been close to a computer since an early
+          Hey! I'm Ragav, I've been close to a computer since an early
           age, and been passionate about it ever since.
         </p>
         <p>
