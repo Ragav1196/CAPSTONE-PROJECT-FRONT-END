@@ -13,7 +13,7 @@ export function Links() {
   const [PrjDetails, setPrjDetails] = useState("");
 
   const PrjDetailsfn = () => {
-    fetch("https://capstone-project-guvi.herokuapp.com/", {
+    fetch("https://capstone-project-guvi.herokuapp.com/data", {
       method: "GET",
     })
       .then((data) => data.json())
