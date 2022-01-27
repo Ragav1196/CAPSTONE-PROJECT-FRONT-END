@@ -1,10 +1,8 @@
 import React, { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
-import { copyStyles } from "react-to-print";
 import { Home } from "./HOME PAGE/Home";
 import Button from "@mui/material/Button";
-import { Links } from "../Links";
-// import { Links } from "../PDF/Links";
+import LocalPrintshopIcon from "@mui/icons-material/LocalPrintshop";
 
 export const Example = () => {
   const componentRef = useRef();
@@ -20,11 +18,11 @@ export const Example = () => {
       <Button
         id="PDFPrintButton"
         onClick={handlePrint}
-        variant="contained" /* endIcon={} */
+        variant="contained"
+        endIcon={<LocalPrintshopIcon />}
       >
         Print
       </Button>
-      {/* <button onClick={handlePrint}>Print this out!</button> */}
     </section>
   );
 };

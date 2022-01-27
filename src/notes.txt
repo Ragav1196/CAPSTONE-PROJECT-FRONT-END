@@ -1,2 +1,5 @@
 TO HAVE GRAPHICS EFFECT ON SCROLL:
         npm i aos -- save => Install this module
+
+TO SAVE AS PDF:
+        npm i react-to-print => Install this module

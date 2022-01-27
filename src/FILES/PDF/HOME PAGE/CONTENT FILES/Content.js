@@ -3,7 +3,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
 import { AboutMe } from "./AboutMe";
-import { ProjectsHeading } from "./PROJECT/ProjectsHeading";
 import { ProjectData } from "./PROJECT/ProjectData";
 import { Footer } from "./Footer";
 
