@@ -1,10 +1,12 @@
-.App {
+.App,
+.PDFMainCntr {
   font-family: "Quicksand", sans-serif;
   /* width: 100vw; */
   /* overflow-x: scroll; */
 }
 
-.App * {
+.App *,
+.PDFMainCntr * {
   color: white;
   font-size: 20px;
 }
@@ -13,7 +15,8 @@
   text-decoration: none;
 }
 
-.App p {
+.App p,
+.PDFMainCntr p {
   margin: 0px;
 }
 
@@ -456,4 +459,55 @@
   .AbtMeCtnr > article:nth-child(1) {
     width: 50%;
   }
+}
+
+.PDFMainCntr {
+  background-color: black;
+  /* position: absolute; */
+  /* top: 0px; */
+}
+
+.PDFAbtMeCtnr {
+  margin: 0px;
+}
+
+.PDFTbContentCtnr {
+  padding: 1px 20px;
+  /* position: absolute;
+  bottom: 700px; */
+}
+
+.PDFAbtMeCtnrImg {
+  page-break-after: always;
+}
+
+.PDFprojDataContr > article:nth-child(1) {
+  page-break-after: always;
+  margin-top: 220px;
+}
+
+.PDFfooterCtnr {
+  height: 88vh;
+}
+
+.PDFprojectsCtnr {
+  page-break-after: always;
+  margin-top: 220px;
+}
+
+.PDFTBBio > p:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.PDF {
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 385px;
+}
+
+#PDFPrintButton {
+  margin: 40px;
+  background-color: #4e8e45;
+  color: black;
 }

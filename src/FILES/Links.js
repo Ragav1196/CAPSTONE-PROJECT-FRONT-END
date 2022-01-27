@@ -1,3 +1,4 @@
+import React from "react";
 import { Switch, Route } from "react-router-dom/cjs/react-router-dom.min";
 import { Home } from "./HOME PAGE/Home";
 import { createContext, useEffect, useState } from "react";
@@ -5,7 +6,7 @@ import { Content } from "./PROJECT PAGE/Content";
 
 export const context = createContext(null);
 
-export function Links() {
+export const Links = React.forwardRef((props, ref) => {
   // TO TOGGLE HIDE AND SHOW TOPBAR MENU:
   const [TbMenuBar, setTbMenuBar] = useState(false);
 
@@ -26,7 +27,7 @@ export function Links() {
 
   return (
     <context.Provider value={obj}>
-      <section className="linkCntr">
+      <section ref={ref} className="linkCntr PDFMainCntr">
         <Switch>
           <Route exact path="/">
             <Home />
@@ -38,4 +39,4 @@ export function Links() {
       </section>
     </context.Provider>
   );
-}
+});

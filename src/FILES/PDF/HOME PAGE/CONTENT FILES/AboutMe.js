@@ -1,11 +1,11 @@
 export function AboutMe() {
   return (
-    <section data-aos="fade-up" className="AbtMeCtnr">
+    <section className="AbtMeCtnr PDFAbtMeCtnr">
       <article>
         <h1>⚡ About Me</h1>
         <p>
-          Hey! I'm Ragav, I've been close to a computer since an early
-          age, and been passionate about it ever since.
+          Hey! I'm Ragav, I've been close to a computer since an early age, and
+          been passionate about it ever since.
         </p>
         <p>
           I really liked to build stuff using <span>no-code tools</span> back in
@@ -17,12 +17,12 @@ export function AboutMe() {
           <span>Web & Mobile Development, Open Source</span> and
           <span>Competitive Programming</span>
         </p>
-        <p className="pageBrk">
+        <p>
           When I'm not coding I play games with my friends, watch some show on
           Netflix, or if the weather's good, play basketball! 🏀
         </p>
       </article>
-      <article>
+      <article className="PDFAbtMeCtnrImg">
         <img
           src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
           alt="Profile"
