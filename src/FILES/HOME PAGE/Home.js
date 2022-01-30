@@ -5,6 +5,7 @@ import { context } from "../Links";
 import { useContext, useState, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Example } from "../PDF/pdf";
 
 export function Home() {
   // TO GET PROJECT DETAILS:
@@ -33,6 +34,7 @@ export function Home() {
           <TopBar />
           <Content />
           <TbMenu />
+          <Example />
         </>
       ) : (
         ""
